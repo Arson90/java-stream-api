@@ -39,7 +39,7 @@ public class PersonDTO {
                 '}';
     }
 
-    private static PersonDTO map(Person person) {
+    public static PersonDTO map(Person person) {
         return new PersonDTO(person.getId(), person.getFirst_name(), person.getCountry(), person.getCity());
     }
 }
